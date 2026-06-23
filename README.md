@@ -74,7 +74,7 @@ Switch algorithms using the top-right drop-down on the main page. Stratum URL pa
 | `scrypt` | ASIC / GPU | LTC (Litecoin), DOGE (Dogecoin), FTC (Feathercoin), LC2 (Litecoin II), DINGO (Dingocoin), LKY (Luckycoin), NYC (NewYorkCoin), EAC (Earthcoin), CAT (Catcoin), MOON (Mooncoin), WDC (Worldcoin), JKC (Junkcoin), QUAI (Quai) |
 | `kawpow` | GPU | RVN (Ravencoin), KRGN (Kerrigan), NEOX (Neoxa), XNA (Neurai), AIPG (AI Power Grid), SATOX (Satoxcoin), OSMI (Osmium), SHIC (Shiba Inucoin), TRMP (Trumpow), DOGPU (DogeGPU), FREN (Frencoin), FLOP (Flopcoin), SMLP (SmartLoop AI), MECU (MecuAI), SOH (StohnCoin), YERB (Yerbas) |
 | `randomx` | CPU | XMR (Monero) |
-| `yescryptr16` | CPU | **FNNC (Fennec)**, BELL (Bellcoin), BEL (Bells) |
+| `yescryptr16` | CPU | FNNC (Fennec), BELL (Bellcoin), BEL (Bells) |
 | `yescryptr32` | CPU | UNFY (Unifyroom), QCH (QuestChain) |
 | `yescrypt` | CPU | XMY (Myriadcoin), YTN (Yenten), BSTY (GlobalBoost) |
 | `yespower` | CPU | SUBI (SubiNetwork), TCC (Taichicoin), FSC (Fsociety), HOOT (HootChain) |
