@@ -1,0 +1,23 @@
+{
+  "mining_dutch": {
+    "api_base_url": "https://www.mining-dutch.nl/api",
+    "api_key": "YOUR_API_KEY_HERE",
+    "party_id": "coven",
+    "webhook_secret": "YOUR_WEBHOOK_SECRET_HERE"
+  },
+  "bot": {
+    "discord_webhook_url": "YOUR_DISCORD_WEBHOOK_URL",
+    "update_interval_seconds": 60,
+    "alert_threshold_hashrate_drop_percent": 25
+  },
+  "web": {
+    "host": "0.0.0.0",
+    "port": 8080,
+    "session_secret": "GENERATE_RANDOM_SECRET"
+  },
+  "database": {
+    "url": "postgresql://user:pass@host/db?sslmode=require",
+    "max_connections": 10,
+    "connect_timeout_seconds": 10
+  }
+}
