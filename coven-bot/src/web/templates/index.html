@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Coven -- Mining Dashboard</title>
+  <link rel="stylesheet" href="/static/app.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>"/>
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <span class="logo">🔮</span>
+      <div>
+        <h1>Crypto Coven</h1>
+        <span class="subtitle">Party ID: <code>coven</code> &middot; Mining-Dutch.nl</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <span id="last-update" class="muted">Updating...</span>
+      <span id="status-dot" class="dot dot-ok" title="Live"></span>
+    </div>
+  </header>
+
+  <section class="cards">
+    <div class="card">
+      <div class="card-label">Total Hashrate</div>
+      <div class="card-value" id="total-hashrate">--</div>
+      <div class="card-sub">party combined</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Active Miners</div>
+      <div class="card-value" id="active-miners">--</div>
+      <div class="card-sub">online now</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Blocks Found (24h)</div>
+      <div class="card-value" id="blocks-found">--</div>
+      <div class="card-sub">party blocks</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Est. Daily Earnings</div>
+      <div class="card-value" id="est-earnings">--</div>
+      <div class="card-sub">across coven</div>
+    </div>
+  </section>
+
+  <main class="grid">
+
+    <section class="panel panel-wide">
+      <div class="panel-header">
+        <h2>Miners</h2>
+        <span id="miner-count" class="badge">0</span>
+      </div>
+      <div class="table-wrap">
+        <table id="miners-table">
+          <thead>
+            <tr>
+              <th>Worker</th>
+              <th>User</th>
+              <th>Algorithm</th>
+              <th>Region</th>
+              <th>Hashrate</th>
+              <th>Accepted</th>
+              <th>Rejected</th>
+              <th>Status</th>
+              <th>Last Seen</th>
+            </tr>
+          </thead>
+          <tbody id="miners-body">
+            <tr><td colspan="9" class="empty">Loading...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>Alerts</h2>
+        <span id="alert-count" class="badge">0</span>
+      </div>
+      <ul id="alerts-list" class="alert-list">
+        <li class="empty">No active alerts</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>Recent Blocks</h2>
+      </div>
+      <ul id="blocks-list" class="block-list">
+        <li class="empty">No blocks found yet</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <section class="panel panel-wide sparkline-section">
+    <div class="panel-header"><h2>Hashrate History</h2></div>
+    <div id="sparklines" class="sparklines"></div>
+  </section>
+
+  <footer>
+    Fivemil &middot; Crypto Coven &middot;
+    <a href="https://www.mining-dutch.nl" target="_blank">Mining-Dutch.nl</a>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
